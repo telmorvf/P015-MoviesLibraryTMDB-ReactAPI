@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/P015-MoviesLibraryTMDM-ReactAPI.git",
+  base: "/P015-MoviesLibraryTMDB-ReactAPI.git",
 })

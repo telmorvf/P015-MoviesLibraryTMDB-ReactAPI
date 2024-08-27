@@ -1,3 +1,5 @@
+import './MoviesGrid.css'
+
 import { useEffect, useState } from "react";
 import MovieCard from "../components/MovieCard";
 
@@ -25,7 +27,7 @@ const Home = () => {
   return (
     <div className="container">
 
-      <h2 className="title">Melhores filmes:</h2>
+      <h2 className="title">Os melhores filmes</h2>
       <div className="movies-container">
         {topMovies === 0 && <p>Carregando...</p>}
         {/* {topMovies.length > 0 && topMovies.map((movie) => <p key={movie.id}>{movie.title}</p>)} */}

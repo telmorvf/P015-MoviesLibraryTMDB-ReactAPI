@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route element={<App />}>
 
-          <Route path="/movies-library" element={<Home />} />
+          <Route path="/P015-MoviesLibraryTMDB-ReactAPI" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/movie/:id" element={<Movie />} />
           <Route path="/search" element={<Search />} />

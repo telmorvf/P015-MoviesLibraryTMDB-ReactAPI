@@ -10,7 +10,7 @@ const Navbar = () => {
 
     <nav id='navbar'>
       <h2>
-        <Link to='/movies-library'><BiCameraMovie />Movies Library</Link>
+        <Link to='/P015-MoviesLibraryTMDB-ReactAPI'><BiCameraMovie />Movies Library</Link>
       </h2>
 
       <h2>

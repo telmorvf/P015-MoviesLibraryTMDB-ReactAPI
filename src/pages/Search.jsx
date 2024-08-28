@@ -4,9 +4,8 @@ import { useSearchParams } from 'react-router-dom'
 import MovieCard from '../components/MovieCard'
 import './MoviesGrid.css'
 
-const searchURL = import.meta.env.VITE_SEARCH
-const apiKey = import.meta.env.VITE_API_KEY
-
+const searchURL = import.meta.env.VITE_SEARCH   // VITE_SEARCH=https://api.themoviedb.org/3/search/movie
+const apiKey = import.meta.env.VITE_API_KEY     // VITE_API_KEY=api_key=aea0409b087ffbcec6ba9144710e2c05
 
 
 const Search = () => {
@@ -37,7 +36,7 @@ const Search = () => {
         <span className='query-text'> {query}</span>
       </h2>
       <div className="movies-container">
-        {movies <= 0 && <p>Carregando...</p>}
+        {movies == '' && <p>Não existem dados para a pesquisa efetuada...</p>}
         {movies.length > 0 && movies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
       </div>
     </div>

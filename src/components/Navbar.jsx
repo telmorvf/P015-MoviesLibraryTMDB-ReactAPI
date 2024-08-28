@@ -5,7 +5,6 @@ import { Link, useNavigate } from 'react-router-dom'
 import { BiAlarm, BiCameraMovie, BiSearchAlt2 } from 'react-icons/bi'
 
 
-
 const Navbar = () => {
   const [search, setSearch] = useState('')
   const navigate = useNavigate();

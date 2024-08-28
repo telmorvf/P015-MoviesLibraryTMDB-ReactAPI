@@ -9,10 +9,9 @@ const MovieCard = ({ movie, showLink = true }) => {
   return (
     <div className="movie-card">
       <img src={imagesURL + movie.poster_path} alt={movie.title} />
-      {/* <p>{imagesURL + movie.poster_path}</p> */}
       <h2>{movie.title}</h2>
       <p>
-        <FaStar /> {movie.vote_average}
+        <FaStar /> {Math.round((movie.vote_average) * 100) / 100}
       </p>
       {showLink && <Link to={`/movie/${movie.id}`}>Detalhes</Link>}
     </div>

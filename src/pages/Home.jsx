@@ -12,7 +12,6 @@ const Home = () => {
   const getTopRatedMovies = async (url) => {
     const res = await fetch(url);
     const data = await res.json();
-
     //console.log(data.results)
     setTopMovies(data.results);
   };
@@ -29,8 +28,7 @@ const Home = () => {
 
       <h2 className="title">Os melhores filmes</h2>
       <div className="movies-container">
-        {topMovies === 0 && <p>Carregando...</p>}
-        {/* {topMovies.length > 0 && topMovies.map((movie) => <p key={movie.id}>{movie.title}</p>)} */}
+        {topMovies == '' && <p>Não existem dados para a pesquisa efetuada...</p>}
         {topMovies.length > 0 && topMovies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
 
       </div>
